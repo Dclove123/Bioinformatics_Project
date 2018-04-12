@@ -1,0 +1,14 @@
+Project focus: to look at grouping and visualizing antibodies. 
+
+We are planning to sort them primarily based on:
+>the organism the antibody is found in
+>antibody families 
+>and maybe another one given the amount of time and the type of data we are able to find. 
+
+Currently we have the databases from:
+>Antibodypedia
+>Biocompare Antibody Search Tool
+
+These two websites seem to be used to search for the best antibody to use for enzyme assays or other pull down assays with no real way to download or access the entire database. We are still unsure about the type of data we would have access to to be able to craft our research focus around it. 
+
+We were wondering if you had any suggestions to other search tools or databases to be able to download/access this data without having to scrape or parse through HTML to find the data needed.
