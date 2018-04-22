@@ -38,8 +38,8 @@ def main():
   fileoutput = ""
   aminoacidstrand = ""
 
-  txt = open("/Bioinformatics_Project/Data/DatabaseCRegionAA.txt", "r")
-  output = open("/Bioinformatics_Project/Scripts/Output/DatabaseCOut.txt", "w")
+  txt = open("/Bioinformatics_Project/Data/DatabaseVRegionAA.txt", "r")
+  output = open("/Bioinformatics_Project/Scripts/Output/DatabaseVOut.txt", "w")
 
   #lineone = "PROTEIN" + "\t" + "A" + "\t" + "C" + "\t" + "D" + "\t" + "E" + "\t" + "F" + "\t" + "G" + "\t" + "H" + "\t" + "I" + "\t" +"K" +"\t"+ "L"+"\t"+ "M"+"\t"+ "N"+"\t"+"P" +"\t"+ "Q" +"\t"+ "R"+"\t"+ "S" +"\t"+ "T" +"\t"+ "V"+"\t"+ "W" +"\t"+ "Y"
   #output.write(lineone)
