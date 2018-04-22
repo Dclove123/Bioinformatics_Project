@@ -5,6 +5,8 @@ def main():
     fileV = open(frequencyFileV, "r")
     result = open("/Scripts/Output/ViterbiOutput.txt"
 
+    
+
 
 
     
