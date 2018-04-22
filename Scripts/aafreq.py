@@ -13,9 +13,9 @@ def aminoacidfrequency(name, sequence, output):
     if letter in aminoacid:
       aminoacid[letter] += 1
     index += 1
-  name = name.strip("\n")
-  ans = "\n" + name + "\t"
-  print ()
+  #name = name.strip("\n")
+  #ans = "\n" + name + "\t"
+  #print ()
 
   # calculate ratios of each amino acid
   for n in aminoacid.keys():
@@ -41,23 +41,22 @@ def main():
   txt = open("/Bioinformatics_Project/Data/DatabaseVRegionAA.txt", "r")
   output = open("/Bioinformatics_Project/Scripts/Output/DatabaseVOut.txt", "w")
 
-  #lineone = "PROTEIN" + "\t" + "A" + "\t" + "C" + "\t" + "D" + "\t" + "E" + "\t" + "F" + "\t" + "G" + "\t" + "H" + "\t" + "I" + "\t" +"K" +"\t"+ "L"+"\t"+ "M"+"\t"+ "N"+"\t"+"P" +"\t"+ "Q" +"\t"+ "R"+"\t"+ "S" +"\t"+ "T" +"\t"+ "V"+"\t"+ "W" +"\t"+ "Y"
-  #output.write(lineone)
-  previousname = txt.readline()
+
 
   for line in txt:
     #piece the aminoacid sequences together
-    if line[0] != ">":
-      aminoacidstrand += line.strip("\n\t")
+    if line[0] == ">":
+      pass
 
-    elif line[0] == ">":
-      newname = line
-      fileoutput = fileoutput + 2*"\n" + previousname + aminoacidstrand
-      aminoacidfrequency(previousname, aminoacidstrand, output)
+    else line[0] != ">":
+    #  newname = line
+      pass
+    fileoutput += aminoacidstrand
+    aminoacidfrequency(previousname, aminoacidstrand, output)
 
       #reset for next protein
-      aminoacidstrand = ""
-      previousname = newname
+    #  aminoacidstrand = ""
+    #  previousname = newname
     #input()
   output.close()
   txt.close()
