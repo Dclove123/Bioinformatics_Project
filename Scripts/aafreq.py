@@ -1,34 +1,3 @@
-'''
-def aminoacidfrequency(dictionary, sequence, output):
-  #only count the 20 amino acids
-  index = 0
-  ratio = {}
-  ans = ""
-
-  #count number of times each amino acid shows
-  while index < len(sequence):
-    length += 1
-    letter = str(sequence[index])
-    if letter in dictionary:
-      dictionary[letter] += 1
-    index += 1
-
-  # calculate ratios of each amino acid
-  for n in dictionary.keys():
-    freq = dictionary[n] / length
-    number = dictionary[n]
-    ratio[n] = round(freq,5)
-
-  # amino acids in alpha order  
-  for i in sorted(ratio):
-    ans = ans + str(ratio[i]) + "\t"
-
-  print (ans)
-  output.write(str(ans))
-'''
-
-
-
 def main():
   sequence = ""
   fileoutput = ""
