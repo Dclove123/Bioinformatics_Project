@@ -58,7 +58,7 @@ def main():
       #reset for next protein
       aminoacidstrand = ""
       previousname = newname
-    input()
+    #input()
   output.close()
   txt.close()
 
