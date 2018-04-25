@@ -3,8 +3,8 @@ def main():
   fileoutput = ""
   aminoacidstrand = ""
 
-  txt = open("/Bioinformatics_Project/Data/DatabaseLRegionAA.txt", "r")
-  output = open("/Bioinformatics_Project/Scripts/Output/LSeqOut.txt", "w")
+  txt = open("/Bioinformatics_Project/Data/LVSeqOut_pre.txt", "r")
+  output = open("/Bioinformatics_Project/Scripts/Output/LVSeqOut.txt", "w")
 
   length = 0
   ratio = {}
